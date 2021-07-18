@@ -12,6 +12,8 @@ mealDetailsContent.parentElement.classList.remove('showRecipe');
 
 
 // get meal list that matches with the ingredients
+//The then() method in JavaScript has been defined in the Promise API and is used to deal with asynchronous tasks such as an API call. 
+//Previously, callback functions were used instead of this function which made the code difficult to maintain.
 function getMealList(){
     let searchInputTxt = document.getElementById('search-input').value.trim();
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
